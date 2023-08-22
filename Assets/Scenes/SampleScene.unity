@@ -331,6 +331,7 @@ MonoBehaviour:
   rig2D: {fileID: 1772053789}
   moveX: 0
   moveY: 0
+  anim: {fileID: 1772053792}
 --- !u!95 &1772053792
 Animator:
   serializedVersion: 5
