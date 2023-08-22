@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
         moveY = Input.GetAxisRaw("Vertical");
         Movement();
         Animation();
+        Attack();
     }
 
     void Movement(){
@@ -41,5 +42,10 @@ public class Player : MonoBehaviour
         anim.SetBool("isMoving", isMoving);
         anim.SetFloat("Horizontal", moveX);
         anim.SetFloat("Vertical", moveY);
+    }
+    void Attack(){
+        if(Input.GetKeyDown(KeyCode.Space)){
+            anim.SetTrigger("isAttack");
+        }
     }
 }
